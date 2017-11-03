@@ -5,6 +5,7 @@ const { resolve } = require('path');
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
+    'babel-polyfill',
     resolve(__dirname, 'src', 'app.js'),
   ],
   output: {
